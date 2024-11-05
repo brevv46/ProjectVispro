@@ -62,6 +62,7 @@ namespace ProjectVispro
                 {
                     FrmBeranda frmBeranda = new FrmBeranda();
                     frmBeranda.Show();
+                    this.Hide();
                 }
                 else
                 {
