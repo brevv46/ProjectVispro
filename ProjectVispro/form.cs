@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProjectVispro
 {
-    public partial class frmBeranda : Form
+    public partial class FrmBeranda : Form
     {
-        public frmBeranda()
+        public FrmBeranda()
         {
             InitializeComponent();
         }
