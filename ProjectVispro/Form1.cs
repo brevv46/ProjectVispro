@@ -23,7 +23,7 @@ namespace ProjectVispro
         private string alamat, query;
         public Form1()
         {
-            alamat = "server=localhost; database=db_myrental; username=root; password=;";
+            alamat = "server=localhost; database=db_carrent; username=root; password=;";
             koneksi = new MySqlConnection(alamat);
             InitializeComponent();
         }
@@ -49,7 +49,7 @@ namespace ProjectVispro
             try
             {
                 // Modify query to search based on password only
-                query = string.Format("select * from tb_pengguna where password = '{0}'", txtPassword.Text);
+                query = string.Format("select * from tb_user where pass = '{0}'", txtPassword.Text);
                 ds.Clear();
                 koneksi.Open();
                 perintah = new MySqlCommand(query, koneksi);

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,8 +13,13 @@ namespace ProjectVispro
 {
     public partial class FormBuattransaksi : Form
     {
+        private MySqlConnection koneksi;
+        private MySqlCommand perintah;
+        private string alamat, query;
         public FormBuattransaksi()
         {
+            alamat = "server=localhost; database=db_carrent; username=root; password=;";
+            koneksi = new MySqlConnection(alamat);
             InitializeComponent();
         }
 
@@ -49,8 +55,50 @@ namespace ProjectVispro
 
         private void btnTransaksi_Click(object sender, EventArgs e)
         {
-            FormTransaksi formTransaksi = new FormTransaksi();
-            formTransaksi.Show();
+            try
+            {
+                // Memastikan semua input diisi
+                if (!string.IsNullOrEmpty(txtPenyewa.Text) &&
+                    !string.IsNullOrEmpty(txtKtp.Text) &&
+                    !string.IsNullOrEmpty(txtHp.Text) &&
+                    !string.IsNullOrEmpty(txtTanggalDiambil.Text) &&
+                    !string.IsNullOrEmpty(txtDikembalikan.Text) &&
+                    !string.IsNullOrEmpty(txtPembayaran.Text))
+                {
+                    // Query untuk memasukkan data ke dalam tabel
+                    query = "INSERT INTO tb_transaksi (Penyewa, No_Ktp, No_hp, Tanggal_ambil, Tanggal_akhir, Pembayaran) " +
+                            "VALUES (@NamaPenyewa, @NomorKtp, @NomorHp, @TanggalDiambil, @TanggalDikembalikan, @Pembayaran)";
+
+                    koneksi.Open();
+                    perintah = new MySqlCommand(query, koneksi);
+
+                    // Menambahkan parameter
+                    perintah.Parameters.AddWithValue("@NamaPenyewa", txtPenyewa.Text);
+                    perintah.Parameters.AddWithValue("@NomorKtp", txtKtp.Text);
+                    perintah.Parameters.AddWithValue("@NomorHp", txtHp.Text);
+                    perintah.Parameters.AddWithValue("@TanggalDiambil", txtTanggalDiambil.Text);
+                    perintah.Parameters.AddWithValue("@TanggalDikembalikan", txtDikembalikan.Text);
+                    perintah.Parameters.AddWithValue("@Pembayaran", txtPembayaran.Text);
+
+                    perintah.ExecuteNonQuery();
+                    koneksi.Close();
+
+                    MessageBox.Show("Data berhasil disimpan.");
+
+                    // Membuka form transaksi setelah konfirmasi
+                    FormTransaksi formTransaksi = new FormTransaksi();
+                    formTransaksi.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Silakan isi semua field.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Terjadi kesalahan: " + ex.Message);
+            }
         }
     }
 }
