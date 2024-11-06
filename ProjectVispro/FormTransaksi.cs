@@ -37,6 +37,11 @@ namespace ProjectVispro
             formHistoryTransaksi.Show();
         }
 
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void FormTransaksi_Load(object sender, EventArgs e)
         {
             try

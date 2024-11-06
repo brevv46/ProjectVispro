@@ -35,11 +35,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,11 +46,12 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label5.Location = new System.Drawing.Point(388, 398);
+            this.label5.Location = new System.Drawing.Point(388, 93);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(298, 32);
+            this.label5.Size = new System.Drawing.Size(237, 32);
             this.label5.TabIndex = 58;
-            this.label5.Text = "Belum ada transaksi ";
+            this.label5.Text = "Daftar Transaksi";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // btnHistory
             // 
@@ -118,26 +117,14 @@
             this.pictureBox1.TabIndex = 65;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::ProjectVispro.Properties.Resources.Group_681;
-            this.pictureBox4.Location = new System.Drawing.Point(12, 194);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(1043, 17);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 56;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(143, 261);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 168);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(792, 226);
+            this.dataGridView1.Size = new System.Drawing.Size(1056, 367);
             this.dataGridView1.TabIndex = 70;
             // 
             // FormTransaksi
@@ -154,14 +141,12 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnHistory);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.pictureBox4);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormTransaksi";
             this.Text = "FormTransaksi";
             this.Load += new System.EventHandler(this.FormTransaksi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -171,7 +156,6 @@
         #endregion
 
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button btnHistory;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

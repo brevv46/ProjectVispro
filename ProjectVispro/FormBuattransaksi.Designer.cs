@@ -118,6 +118,7 @@
             // txtPenyewa
             // 
             this.txtPenyewa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(2)))), ((int)(((byte)(20)))));
+            this.txtPenyewa.ForeColor = System.Drawing.Color.White;
             this.txtPenyewa.Location = new System.Drawing.Point(413, 194);
             this.txtPenyewa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPenyewa.Multiline = true;
@@ -128,6 +129,7 @@
             // txtTanggalDiambil
             // 
             this.txtTanggalDiambil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(2)))), ((int)(((byte)(20)))));
+            this.txtTanggalDiambil.ForeColor = System.Drawing.Color.White;
             this.txtTanggalDiambil.Location = new System.Drawing.Point(413, 386);
             this.txtTanggalDiambil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTanggalDiambil.Multiline = true;
@@ -138,6 +140,7 @@
             // txtDikembalikan
             // 
             this.txtDikembalikan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(2)))), ((int)(((byte)(20)))));
+            this.txtDikembalikan.ForeColor = System.Drawing.Color.White;
             this.txtDikembalikan.Location = new System.Drawing.Point(413, 446);
             this.txtDikembalikan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDikembalikan.Multiline = true;
@@ -148,6 +151,7 @@
             // txtPembayaran
             // 
             this.txtPembayaran.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(2)))), ((int)(((byte)(20)))));
+            this.txtPembayaran.ForeColor = System.Drawing.Color.White;
             this.txtPembayaran.Location = new System.Drawing.Point(413, 514);
             this.txtPembayaran.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPembayaran.Multiline = true;
@@ -158,6 +162,7 @@
             // txtHp
             // 
             this.txtHp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(2)))), ((int)(((byte)(20)))));
+            this.txtHp.ForeColor = System.Drawing.Color.White;
             this.txtHp.Location = new System.Drawing.Point(413, 334);
             this.txtHp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtHp.Multiline = true;
@@ -168,6 +173,7 @@
             // txtKtp
             // 
             this.txtKtp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(2)))), ((int)(((byte)(20)))));
+            this.txtKtp.ForeColor = System.Drawing.Color.White;
             this.txtKtp.Location = new System.Drawing.Point(413, 263);
             this.txtKtp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtKtp.Multiline = true;
@@ -221,7 +227,7 @@
             this.btnTransaksi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTransaksi.ForeColor = System.Drawing.Color.Black;
             this.btnTransaksi.Location = new System.Drawing.Point(588, 582);
-            this.btnTransaksi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTransaksi.Margin = new System.Windows.Forms.Padding(4);
             this.btnTransaksi.Name = "btnTransaksi";
             this.btnTransaksi.Size = new System.Drawing.Size(121, 28);
             this.btnTransaksi.TabIndex = 56;
