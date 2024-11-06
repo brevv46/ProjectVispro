@@ -57,7 +57,7 @@ namespace ProjectVispro
         {
             try
             {
-                // Memastikan semua input diisi
+               
                 if (!string.IsNullOrEmpty(txtPenyewa.Text) &&
                     !string.IsNullOrEmpty(txtKtp.Text) &&
                     !string.IsNullOrEmpty(txtHp.Text) &&
@@ -65,14 +65,14 @@ namespace ProjectVispro
                     !string.IsNullOrEmpty(txtDikembalikan.Text) &&
                     !string.IsNullOrEmpty(txtPembayaran.Text))
                 {
-                    // Query untuk memasukkan data ke dalam tabel
+                    
                     query = "INSERT INTO tb_transaksi (Penyewa, No_Ktp, No_hp, Tanggal_ambil, Tanggal_akhir, Pembayaran) " +
                             "VALUES (@NamaPenyewa, @NomorKtp, @NomorHp, @TanggalDiambil, @TanggalDikembalikan, @Pembayaran)";
 
                     koneksi.Open();
                     perintah = new MySqlCommand(query, koneksi);
 
-                    // Menambahkan parameter
+                    
                     perintah.Parameters.AddWithValue("@NamaPenyewa", txtPenyewa.Text);
                     perintah.Parameters.AddWithValue("@NomorKtp", txtKtp.Text);
                     perintah.Parameters.AddWithValue("@NomorHp", txtHp.Text);
@@ -85,7 +85,7 @@ namespace ProjectVispro
 
                     MessageBox.Show("Data berhasil disimpan.");
 
-                    // Membuka form transaksi setelah konfirmasi
+                    
                     FormTransaksi formTransaksi = new FormTransaksi();
                     formTransaksi.Show();
                     this.Hide();

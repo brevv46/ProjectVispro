@@ -48,7 +48,7 @@ namespace ProjectVispro
         {
             try
             {
-                // Modify query to search based on password only
+                
                 query = string.Format("select * from tb_user where pass = '{0}'", txtPassword.Text);
                 ds.Clear();
                 koneksi.Open();

@@ -41,24 +41,24 @@ namespace ProjectVispro
         {
             try
             {
-                // Open connection to database
+               
                 koneksi.Open();
 
-                // Query to get all transaction history
+                
                 query = "SELECT Penyewa AS 'Nama Penyewa', No_Ktp AS 'Nomor KTP', No_Hp AS 'Nomor HP', Tanggal_ambil AS 'Tanggal Diambil', Tanggal_akhir AS 'Tanggal Dikembalikan', Pembayaran AS 'Pembayaran' FROM tb_transaksi";
 
-                // Execute command
+                
                 perintah = new MySqlCommand(query, koneksi);
                 adapter = new MySqlDataAdapter(perintah);
 
-                // Fill DataSet and bind to DataGridView
+                
                 ds.Clear();
                 adapter.Fill(ds);
                 koneksi.Close();
 
                 dataGridView1.DataSource = ds.Tables[0];
 
-                // Customize column widths
+                
                 dataGridView1.Columns[0].Width = 100;
                 dataGridView1.Columns[1].Width = 150;
                 dataGridView1.Columns[2].Width = 120;

@@ -111,6 +111,7 @@ namespace ProjectVispro
         {
             FormTransaksi formTransaksi = new FormTransaksi();
             formTransaksi.Show();
+            this.Hide();
         }
 
         private void label11_Click(object sender, EventArgs e)
@@ -122,6 +123,7 @@ namespace ProjectVispro
         {
             FormBuattransaksi formBuattransaksi = new FormBuattransaksi();
             formBuattransaksi.Show();
+            this.Hide();
         }
 
         private void label33_Click(object sender, EventArgs e)
@@ -142,24 +144,28 @@ namespace ProjectVispro
         {
             FormBuattransaksi formBuattransaksi = new FormBuattransaksi();
             formBuattransaksi.Show();
+            this.Hide();
         }
 
         private void LblTransaksi2_Click(object sender, EventArgs e)
         {
             FormBuattransaksi formBuattransaksi = new FormBuattransaksi();
             formBuattransaksi.Show();
+            this.Hide();
         }
 
         private void LblTransaksi3_Click(object sender, EventArgs e)
         {
             FormBuattransaksi formBuattransaksi = new FormBuattransaksi();
             formBuattransaksi.Show();
+            this.Hide();
         }
 
         private void LblTransaksi5_Click(object sender, EventArgs e)
         {
             FormBuattransaksi formBuattransaksi = new FormBuattransaksi();
             formBuattransaksi.Show();
+            this.Hide();
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -171,6 +177,7 @@ namespace ProjectVispro
         {
             FormBuattransaksi formBuattransaksi = new FormBuattransaksi();
             formBuattransaksi.Show();
+            this.Hide();
         }
     }
 }
