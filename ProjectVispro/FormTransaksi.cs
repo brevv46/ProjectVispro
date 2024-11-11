@@ -43,6 +43,37 @@ namespace ProjectVispro
 
         }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnBeranda_Click(object sender, EventArgs e)
+        {
+            FrmBeranda frmBeranda = new FrmBeranda();
+            frmBeranda.Show();
+              
+        }
+
+        private void BtnBeranda_Click_1(object sender, EventArgs e)
+        {
+            FrmBeranda frmBeranda1 = new FrmBeranda();
+            frmBeranda1.Show();
+            this.Hide();
+        }
+
+        private void BtnBeranda_Click_2(object sender, EventArgs e)
+        {
+            FrmBeranda frmBeranda2 = new FrmBeranda();
+            frmBeranda2.Show();
+            this.Hide();
+        }
+
         private void FormTransaksi_Load(object sender, EventArgs e)
         {
             try

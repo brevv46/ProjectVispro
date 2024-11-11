@@ -31,11 +31,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btnHistory = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.BtnBeranda = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -75,17 +75,7 @@
             this.label3.Size = new System.Drawing.Size(82, 18);
             this.label3.TabIndex = 69;
             this.label3.Text = "Transaksi";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Cyan;
-            this.label2.Location = new System.Drawing.Point(391, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 18);
-            this.label2.TabIndex = 68;
-            this.label2.Text = "Beranda";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label1
             // 
@@ -127,15 +117,28 @@
             this.dataGridView1.Size = new System.Drawing.Size(1056, 367);
             this.dataGridView1.TabIndex = 70;
             // 
+            // BtnBeranda
+            // 
+            this.BtnBeranda.AutoSize = true;
+            this.BtnBeranda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBeranda.ForeColor = System.Drawing.Color.Cyan;
+            this.BtnBeranda.Location = new System.Drawing.Point(405, 26);
+            this.BtnBeranda.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.BtnBeranda.Name = "BtnBeranda";
+            this.BtnBeranda.Size = new System.Drawing.Size(79, 20);
+            this.BtnBeranda.TabIndex = 71;
+            this.BtnBeranda.Text = "Beranda";
+            this.BtnBeranda.Click += new System.EventHandler(this.BtnBeranda_Click_2);
+            // 
             // FormTransaksi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(2)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1080, 703);
+            this.Controls.Add(this.BtnBeranda);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
@@ -158,10 +161,10 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnHistory;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label BtnBeranda;
     }
 }
