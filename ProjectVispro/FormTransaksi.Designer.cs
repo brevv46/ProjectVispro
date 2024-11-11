@@ -36,6 +36,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.BtnBeranda = new System.Windows.Forms.Label();
+            this.btnPengembalian = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -130,12 +131,24 @@
             this.BtnBeranda.Text = "Beranda";
             this.BtnBeranda.Click += new System.EventHandler(this.BtnBeranda_Click_2);
             // 
+            // btnPengembalian
+            // 
+            this.btnPengembalian.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnPengembalian.Location = new System.Drawing.Point(21, 646);
+            this.btnPengembalian.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPengembalian.Name = "btnPengembalian";
+            this.btnPengembalian.Size = new System.Drawing.Size(195, 27);
+            this.btnPengembalian.TabIndex = 72;
+            this.btnPengembalian.Text = "Pengembalian Kendaraan";
+            this.btnPengembalian.UseVisualStyleBackColor = true;
+            // 
             // FormTransaksi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(2)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1080, 703);
+            this.Controls.Add(this.btnPengembalian);
             this.Controls.Add(this.BtnBeranda);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label3);
@@ -166,5 +179,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label BtnBeranda;
+        private System.Windows.Forms.Button btnPengembalian;
     }
 }
